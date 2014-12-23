@@ -96,10 +96,11 @@ function! s:activateDirNode(node)
     call a:node.activate({'reuse': 1})
 endfunction
 
+
 "FUNCTION: s:activateFileNode() {{{1
 "handle the user activating a tree node
 function! s:activateFileNode(node)
-    call a:node.activate({'reuse': 1, 'where': 'p'})
+    call a:node.activate({'reuse': 0, 'where': 'p'})
 endfunction
 
 "FUNCTION: s:activateBookmark() {{{1
