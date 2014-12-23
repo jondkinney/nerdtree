@@ -100,7 +100,7 @@ endfunction
 "FUNCTION: s:activateFileNode() {{{1
 "handle the user activating a tree node
 function! s:activateFileNode(node)
-    call a:node.activate({'reuse': 0, 'where': 'p'})
+    call a:node.activate({'reuse': 0, 'where': 't'})
 endfunction
 
 "FUNCTION: s:activateBookmark() {{{1
